@@ -17,6 +17,14 @@ router.get('/data/protoss/units', function(req, res, next) {
   })
 });
 
+router.get('/data/protoss/units/:id', function(req, res, next) {
+  var id = req.params.id
+  db('protoss_units').where({id}).then(data => {
+    console.log(data);
+    res.send(data);
+  })
+});
+
 router.get('/data/terran/units', function(req, res, next) {
   db('terran_units').then(data => {
     res.send(data);
