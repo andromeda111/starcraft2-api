@@ -7,8 +7,21 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-a {
-  color: #00B7FF;
+.logo {
+  /*display: flex;
+  justify-content: center;*/
+  margin-top: -50px;
+  background-image: url('http://us.blizzard.com/static/_images/games/sc2/wallpapers/wall2/wall2-1024x768.jpg');
+  background-position: top;
+  height: 100px;
+}
+
+.logo-text {
+  font-size: 4rem;
+  padding-top: 25px;
+  padding-left: 25px;
+  /*margin-left: -600px;*/
+  margin-bottom: -25px;
 }
 
 .even {
@@ -29,4 +42,14 @@ select {
 
 table {
   font-size: 1.3rem;
+}
+
+.usage-info {
+
+}
+
+.overlay {
+  background: rgba(40, 40, 40, 0.7);
+  width: 100%;
+  height: 100%;
 }

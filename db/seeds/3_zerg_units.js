@@ -51,6 +51,18 @@ exports.seed = function(knex, Promise) {
           life: '35',
           energy: '-',
           armor: '0'
+        },
+        {
+          id: 5,
+          unit: 'Queen',
+          mineral: '150',
+          vespene: '-',
+          supply: '2',
+          buildTime: '50',
+          buildFrom: 'Hatchery',
+          life: '175',
+          energy: '200',
+          armor: '1'
         }
       ]);
     });

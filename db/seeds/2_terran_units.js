@@ -39,6 +39,30 @@ exports.seed = function(knex, Promise) {
           life: '125',
           energy: '-',
           armor: '1'
+        },
+        {
+          id: 4,
+          unit: 'Reaper',
+          mineral: '50',
+          vespene: '50',
+          supply: '1',
+          buildTime: '45',
+          buildFrom: 'Barracks',
+          life: '160',
+          energy: '-',
+          armor: '0'
+        },
+        {
+          id: 5,
+          unit: 'Ghost',
+          mineral: '200',
+          vespene: '100',
+          supply: '2',
+          buildTime: '40',
+          buildFrom: 'Barracks',
+          life: '100',
+          energy: '200',
+          armor: '0'
         }
       ]);
     });

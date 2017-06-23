@@ -42,6 +42,32 @@ exports.seed = function(knex, Promise) {
           shields: '80',
           energy: '-',
           armor: '1'
+        },
+        {
+          id: 4,
+          unit: 'Sentry',
+          mineral: '50',
+          vespene: '100',
+          supply: '2',
+          buildTime: '37',
+          buildFrom: 'Gateway',
+          life: '40',
+          shields: '40',
+          energy: '200',
+          armor: '1'
+        },
+        {
+          id: 5,
+          unit: 'Observer',
+          mineral: '25',
+          vespene: '75',
+          supply: '1',
+          buildTime: '30',
+          buildFrom: 'Robotics Facility',
+          life: '40',
+          shields: '20',
+          energy: '-',
+          armor: '0'
         }
       ]);
     });

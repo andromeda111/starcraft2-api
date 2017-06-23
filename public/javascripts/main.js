@@ -1,5 +1,14 @@
 $(document).ready(function() {
   $.ajax({
+    url: '/data',
+    method: 'GET',
+    dataType: 'json'
+  }).then(function(data) {
+    console.log(data)
+  }).catch(function(error) {
+    console.log('Error: ', error);
+  })
+  $.ajax({
     url: '/data/protoss/units',
     method: 'GET',
     dataType: 'json'
