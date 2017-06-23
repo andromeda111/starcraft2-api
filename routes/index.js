@@ -11,8 +11,20 @@ router.get('/', function(req, res, next) {
   })
 });
 
-router.get('/data', function(req, res, next) {
+router.get('/data/protoss/units', function(req, res, next) {
   db('protoss_units').then(data => {
+    res.send(data);
+  })
+});
+
+router.get('/data/terran/units', function(req, res, next) {
+  db('terran_units').then(data => {
+    res.send(data);
+  })
+});
+
+router.get('/data/zerg/units', function(req, res, next) {
+  db('zerg_units').then(data => {
     res.send(data);
   })
 });

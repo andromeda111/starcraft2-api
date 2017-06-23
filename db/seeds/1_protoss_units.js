@@ -42,7 +42,7 @@ exports.seed = function(knex, Promise) {
           shields: '80',
           energy: '-',
           armor: '1'
-        },
+        }
       ]);
     });
 };
