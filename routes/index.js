@@ -5,8 +5,15 @@ var db = require('../db')
 /* GET home page. */
 router.get('/', function(req, res, next) {
   db('test').then(data => {
-    console.log(data);
-    res.render('index', { title: 'Express' });
+    let databaseAll = JSON.stringify(data)
+
+    res.render('index', {data: databaseAll} );
+  })
+});
+
+router.get('/data', function(req, res, next) {
+  db('test').then(data => {
+    res.send(data);
   })
 });
 

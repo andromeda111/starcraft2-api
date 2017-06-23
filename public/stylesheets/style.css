@@ -6,3 +6,19 @@ body {
 a {
   color: #00B7FF;
 }
+
+.even {
+  background-color: #272b30 !important;
+}
+
+label {
+  color: #c8c8c8;
+}
+
+select {
+  color: black;
+}
+
+.dataTables_info {
+  color: #c8c8c8 !important;
+}
