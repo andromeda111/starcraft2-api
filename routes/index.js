@@ -4,7 +4,7 @@ var db = require('../db')
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  db('test').then(data => {
+  db('protoss_units').then(data => {
     let databaseAll = JSON.stringify(data)
 
     res.render('index', {data: databaseAll} );
@@ -12,7 +12,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/data', function(req, res, next) {
-  db('test').then(data => {
+  db('protoss_units').then(data => {
     res.send(data);
   })
 });

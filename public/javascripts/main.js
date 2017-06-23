@@ -9,7 +9,17 @@ $(document).ready(function() {
     $('#datatable').dataTable({
       data: data,
       columns: [
-        {'data': 'name'}
+        {'data': 'id'},
+        {'data': 'unit'},
+        {'data': 'mineral'},
+        {'data': 'vespene'},
+        {'data': 'supply'},
+        {'data': 'buildTime'},
+        {'data': 'buildFrom'},
+        {'data': 'life'},
+        {'data': 'shields'},
+        {'data': 'energy'},
+        {'data': 'armor'}
       ]
     })
   }).catch(function(error) {
